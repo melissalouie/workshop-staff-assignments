@@ -1,0 +1,10 @@
+<div class="page-header">
+  <%= link_to 'Delete', person_assignment_path(@person, @assignment), method: :delete %>
+  <h1><%= @assignment.role %></h1>
+</div>
+<p>
+  <h3>Location: <%= @assignment.location.name %></h3>
+</p>
+<p>
+  <h3>Person: <%= @assignment.person.first_name %></h3>
+</p>

@@ -1,3 +1,6 @@
 class Person < ActiveRecord::Base
-  validates (:title and :last_name) || (:first_name and :last_name), presence: true
+  validates :title, :last_name, presence: true
+  validates :first_name, :last_name, presence: true
+  has_many :assignments
+  has_many :locations, through: :assignments
 end

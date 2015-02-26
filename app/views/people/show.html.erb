@@ -4,4 +4,10 @@
     <h1><%="#{@person.title} #{@person.first_name} #{@person.last_name}" %></h1>
   </div>
   <%= link_to 'Add Location', new_location_path, class: 'btn btn-lg btn-default' %>
+  <p>
+    <% @person.assignments.each do |assignment| %>
+      <%= assignment.role %>
+      <%= link_to 'Edit Assignment', edit_person_assignment_path(@person, assignment) %>
+    <% end %>
+  </p>
 </div>

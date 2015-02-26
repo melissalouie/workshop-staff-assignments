@@ -15,6 +15,8 @@ Person.create!(
   last_name: "Example",
 )
 
+
+
 ["Northeast", "Midwest", "Mountain West", "Northwest", "Southwest", "Deep south", "Texas"].each do |name|
   Location.create!(name: name)
 end

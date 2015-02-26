@@ -26,12 +26,12 @@ From the person show page
 Users should be abel to click an edit link and see the edit form for a person DONE
 ```
 
-**Users must enter a title/last_name or first_name/last_name**
+**Users must enter a title/last_name or first_name/last_name** DONE
 
 ```
 While adding or editing a person
 Users must enter either a title/last_name or a first_name/last_name
-Otherwise they get a validation message and the person isn't saved
+Otherwise they get a validation message and the person isn't saved DONE
 ```
 
 **Users can assign people to locations**
@@ -41,10 +41,10 @@ Go to person show page
 Click on "+ Add Location"
 Fill out form
 View assignment on person show page
-Assignments must have both a location and a role
+Assignments must have both a location and a role Done
 ```
 
-**People cannot be assigned to the same location with the same role**
+**People cannot be assigned to the same location with the same role** 
 
 ```
 A person can be assigned to "Northeast" more than once, as long as the role is unique
