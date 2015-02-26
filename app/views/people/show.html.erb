@@ -1,5 +1,7 @@
 <div class="container">
   <div class="page-header">
+    <%= link_to 'Edit', edit_person_path(@person), class: 'btn btn-default pull-right' %>
     <h1><%="#{@person.title} #{@person.first_name} #{@person.last_name}" %></h1>
   </div>
+  <%= link_to 'Add Location', new_location_path, class: 'btn btn-lg btn-default' %>
 </div>

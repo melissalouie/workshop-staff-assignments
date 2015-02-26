@@ -1,10 +1,16 @@
-<div class="page-header">
-  <h1>Add a Staff Member</h1>
-</div>
-
-<%= render 'form' %>
-
 <%= form_for @person do |f| %>
+
+  <% if @person.errors.any? %>
+    <div class="alert alert-danger" id="error_explanation">
+      <h2><%= pluralize(@person.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @person.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <div class="form-group">
     <%= f.label :title %>
